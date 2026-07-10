@@ -22,9 +22,7 @@ const Experience = () => {
               Manufacturing (IIITDM) Kancheepuram
             </p>
             <p className="mt-4 max-w-xl leading-relaxed text-white/50">
-              Currently pursuing my undergraduate degree, building a
-              foundation in software engineering, systems, and full-stack
-              development alongside hands-on projects.
+              Currently pursuing my undergraduate degree.
             </p>
           </Reveal>
         </div>

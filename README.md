@@ -1,6 +1,6 @@
 # Mathivadhani S — Portfolio
 
-A personal developer portfolio showcasing my projects, skills, and experiments in web development.
+A personal developer portfolio showcasing my projects and skills.
 
 Live: https://portfolio-new-mu-sand.vercel.app/
 
@@ -15,3 +15,4 @@ Live: https://portfolio-new-mu-sand.vercel.app/
 ## Acknowledgements
 
 Some UI components and animations were inspired by ReactBits.
+
