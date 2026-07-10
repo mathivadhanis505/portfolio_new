@@ -1,0 +1,67 @@
+.pixel-card {
+  position: relative;
+  overflow: hidden;
+
+  width: 300px;
+  height: 420px;
+
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,.08);
+
+  background: #111827;
+
+  isolation: isolate;
+
+  user-select: none;
+
+  transition: .35s;
+}
+
+.pixel-card-content{
+  position:absolute;
+  inset:0;
+  z-index:1;
+}
+
+.pixel-card-content img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.pixel-canvas{
+  position:absolute;
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  z-index:2;
+
+  pointer-events:none;
+}
+
+.pixel-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:3;
+
+  opacity:0;
+
+  transition:opacity .45s;
+
+  background:
+    radial-gradient(circle at center,
+    transparent 40%,
+    rgba(0,0,0,.25) 100%);
+}
+
+.pixel-card:hover::before{
+  opacity:1;
+}
+
+.pixel-card:hover{
+  border-color:rgba(255,255,255,.18);
+}

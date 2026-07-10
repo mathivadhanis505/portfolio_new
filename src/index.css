@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  --color-bg: #0B0912;
+  --color-surface: #120F17;
+  --color-purple-glow: #A855F7;
+  --color-purple-soft: #B497CF;
+
+  --shadow-glow-sm: 0 0 20px rgba(168, 85, 247, 0.35);
+  --shadow-glow-md: 0 0 35px rgba(168, 85, 247, 0.5);
+  --shadow-glow-lg: 0 0 60px rgba(168, 85, 247, 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #f5f5f5;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+/* ---------- One section per scroll ----------
+   Each <section> snaps to fill the viewport as the user scrolls, so only
+   one part of the page is in view at a time — like a slide deck. The
+   scroll container is the whole page (html), which keeps native scroll
+   physics (trackpad, wheel, keyboard, mobile swipe) instead of trapping
+   scroll inside a sub-element. */
+html {
+  scroll-snap-type: y proximity;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  scroll-margin-top: 96px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-snap-type: none;
+  }
+}
+
+/* ---------- Shared section layout ----------
+   Every section uses the exact same horizontal padding + max-width
+   container so headings and body copy line up from section to section. */
+.section-shell {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 7rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-shell {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.section-inner {
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 72rem; /* 1152px — matches the rest of the site */
+}
+
+.section-kicker {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-purple-soft);
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(168, 85, 247, 0.35);
+  color: #ffffff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.65);
+}
+
+/* Focus visibility, kept subtle but present for a11y */
+:focus-visible {
+  outline: 2px solid var(--color-purple-glow);
+  outline-offset: 3px;
+}
+
+/* Shared utility classes */
+@layer utilities {
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 25px rgba(168, 85, 247, 0.45);
+  }
+
+  .glow-border {
+    box-shadow: var(--shadow-glow-sm);
+  }
+
+  .glow-border:hover {
+    box-shadow: var(--shadow-glow-md);
+  }
+
+  .section-fade {
+    animation: fadeUp 0.8s ease-out both;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
