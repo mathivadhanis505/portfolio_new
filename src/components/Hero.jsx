@@ -19,12 +19,9 @@ export default function Hero() {
 
           <Reveal delay={0.4} y={16}>
             <p className="mt-6 text-lg leading-relaxed text-white/60">
-              I like turning random ideas into real projects and figuring
-              things out along the way. I'm an aspiring full-stack developer
-              who enjoys building modern web applications, experimenting
-              with new technologies, and continuously learning. Beyond
-              coding, you'll usually find me sketching, grabbing coffee,
-              watching movies, or catching an F1 race.
+              I like to build various projects and learn on the go. I am an aspiring full-stack developer and I'm 
+              continuosly exploring new technologies and frameworks to enhance my skills. When I'm off the keyboard, you'll
+              find me sketching or reading a book.
             </p>
           </Reveal>
 
