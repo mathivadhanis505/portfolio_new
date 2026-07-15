@@ -8,7 +8,7 @@ const FALLOFF_CURVES = {
 };
 
 export const PROJECTS = [
-  {
+ {
   title: "Spotify Vinyl Player",
   description:
     "A full-stack Spotify companion featuring OAuth authentication, live playback synchronization, animated vinyl visuals, artist insights, lyrics, and real-time playback controls through the Spotify Web API.",
@@ -23,6 +23,8 @@ export const PROJECTS = [
   ],
   preview:
     "https://res.cloudinary.com/crqz8dbf/image/upload/v1784126526/preview_ogbplw.png",
+  github: "https://github.com/mathivadhanis505/vinyl",
+  demo: "https://youtu.be/V9NYI1UCvB0",
 },
   {
     title: "Dependency Vulnerability Auto-Patcher",
