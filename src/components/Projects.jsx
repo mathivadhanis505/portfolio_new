@@ -75,7 +75,8 @@ const Projects = () => {
             </AnimatePresence>
 
             {/* Project Preview Box */}
-            <Reveal
+            {/* Project Preview */}
+<Reveal
   delay={0.25}
   className="mt-12 overflow-hidden rounded-2xl border border-white/10"
 >
@@ -92,6 +93,27 @@ const Projects = () => {
     />
   </AnimatePresence>
 </Reveal>
+
+{/* Project Links */}
+<div className="mt-6 flex gap-4">
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-lg border border-white/15 px-5 py-2 text-sm text-white transition hover:border-purple-400 hover:text-purple-300"
+  >
+    GitHub ↗
+  </a>
+
+  <a
+    href={project.demo}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-lg bg-purple-500 px-5 py-2 text-sm font-medium text-white transition hover:bg-purple-400"
+  >
+    Live Demo ↗
+  </a>
+</div>
           </div>
         </div>
       </div>
