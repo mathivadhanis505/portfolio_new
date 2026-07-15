@@ -9,11 +9,19 @@ const FALLOFF_CURVES = {
 
 export const PROJECTS = [
   {
-    title: "Spotify Vinyl Player",
-    description:
-      "A retro-inspired Spotify experience that transforms music playback into an animated vinyl record with live Spotify integration, album artwork, and smooth interactions.",
-    tech: ["React", "Tailwind CSS", "Spotify API", "Framer Motion"],
-  },
+  title: "Spotify Vinyl Player",
+  description:
+    "A full-stack Spotify companion featuring OAuth authentication, live playback synchronization, animated vinyl visuals, artist insights, lyrics, and real-time playback controls through the Spotify Web API.",
+  tech: [
+    "React",
+    "TypeScript",
+    "Express",
+    "Spotify Web API",
+    "OAuth 2.0",
+    "Render",
+    "Vercel",
+  ],
+},
   {
     title: "Dependency Vulnerability Auto-Patcher",
     description:
