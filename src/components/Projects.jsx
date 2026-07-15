@@ -34,15 +34,15 @@ const Projects = () => {
 
             <AnimatePresence mode="wait">
               <motion.p
-                key={active}
-                initial={{ opacity: 0, y: 14 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -14 }}
-                transition={{ duration: 0.45, ease: EASE }}
-                className="max-w-3xl text-3xl font-bold leading-snug text-white md:text-4xl"
-              >
-                &lt;{project.description}&gt;
-              </motion.p>
+  key={active}
+  initial={{ opacity: 0, y: 14 }}
+  animate={{ opacity: 1, y: 0 }}
+  exit={{ opacity: 0, y: -14 }}
+  transition={{ duration: 0.45, ease: EASE }}
+  className="max-w-3xl text-3xl font-bold leading-snug text-white md:text-4xl"
+>
+  {project.description}
+</motion.p>
             </AnimatePresence>
 
             {/* Tech Stack */}
@@ -76,11 +76,22 @@ const Projects = () => {
 
             {/* Project Preview Box */}
             <Reveal
-              delay={0.25}
-              className="mt-12 flex min-h-[220px] items-center justify-center rounded-2xl border border-dashed border-white/15 bg-[#0d1120] text-white/30"
-            >
-              Project preview / screenshot
-            </Reveal>
+  delay={0.25}
+  className="mt-12 overflow-hidden rounded-2xl border border-white/10"
+>
+  <AnimatePresence mode="wait">
+    <motion.img
+      key={active}
+      src={project.preview}
+      alt={project.title}
+      initial={{ opacity: 0, scale: 1.03 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.98 }}
+      transition={{ duration: 0.4, ease: EASE }}
+      className="w-full rounded-2xl object-cover"
+    />
+  </AnimatePresence>
+</Reveal>
           </div>
         </div>
       </div>

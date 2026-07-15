@@ -21,6 +21,8 @@ export const PROJECTS = [
     "Render",
     "Vercel",
   ],
+  preview:
+    "https://res.cloudinary.com/crqz8dbf/image/upload/v1784126526/preview_ogbplw.png",
 },
   {
     title: "Dependency Vulnerability Auto-Patcher",
