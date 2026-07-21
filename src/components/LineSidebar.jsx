@@ -24,7 +24,7 @@ export const PROJECTS = [
   preview:
     "https://res.cloudinary.com/crqz8dbf/image/upload/v1784126526/preview_ogbplw.png",
   github: "https://github.com/mathivadhanis505/vinyl",
-  demo: "https://youtu.be/V9NYI1UCvB0",
+  demo: "https://www.youtube.com/watch?v=INc94dZiMOU&list=PLDCDI8MNYyQ8&pp=sAgCs",
 },
   {
     title: "Dependency Vulnerability Auto-Patcher",
