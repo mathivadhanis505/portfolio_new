@@ -22,7 +22,7 @@ export const PROJECTS = [
     "Vercel",
   ],
   preview:
-    "https://res.cloudinary.com/crqz8dbf/image/upload/v1784126526/preview_ogbplw.png",
+    "https://res.cloudinary.com/crqz8dbf/image/upload/v1784622540/Screenshot_2026-07-21_135808_b7cffc.png",
   github: "https://github.com/mathivadhanis505/vinyl",
   demo: "https://www.youtube.com/watch?v=INc94dZiMOU&list=PLDCDI8MNYyQ8&pp=sAgCs",
 },
