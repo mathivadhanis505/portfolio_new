@@ -8,47 +8,29 @@ const FALLOFF_CURVES = {
 };
 
 export const PROJECTS = [
- {
-  title: "Spotify Vinyl Player",
-  description:
-    "A full-stack Spotify companion featuring OAuth authentication, live playback synchronization, animated vinyl visuals, artist insights, lyrics, and real-time playback controls through the Spotify Web API.",
-  tech: [
-    "React",
-    "TypeScript",
-    "Express",
-    "Spotify Web API",
-    "OAuth 2.0",
-    "Render",
-    "Vercel",
-  ],
-  preview:
-    "https://res.cloudinary.com/crqz8dbf/image/upload/v1784622540/Screenshot_2026-07-21_135808_b7cffc.png",
-  github: "https://github.com/mathivadhanis505/vinyl",
-  demo: "https://www.youtube.com/watch?v=INc94dZiMOU&list=PLDCDI8MNYyQ8&pp=sAgCs",
-},
   {
-    title: "Dependency Vulnerability Auto-Patcher",
+    title: "Spotify Vinyl Player",
     description:
-      "An automated DevSecOps pipeline that scans repositories for vulnerable dependencies, applies fixes, validates them, and opens pull requests automatically.",
-    tech: ["Python", "Docker", "GitHub Actions", "PostgreSQL", "AWS"],
+      "A full-stack Spotify companion featuring OAuth authentication, live playback synchronization, animated vinyl visuals, artist insights, lyrics, and real-time playback controls through the Spotify Web API.",
+    tech: [
+      "React",
+      "TypeScript",
+      "Express",
+      "Spotify Web API",
+      "OAuth 2.0",
+      "Render",
+      "Vercel",
+    ],
+    preview:
+      "https://res.cloudinary.com/crqz8dbf/image/upload/v1784622540/Screenshot_2026-07-21_135808_b7cffc.png",
+    github: "https://github.com/mathivadhanis505/vinyl",
+    demo: "https://www.youtube.com/watch?v=INc94dZiMOU&list=PLDCDI8MNYyQ8&pp=sAgCs",
   },
   {
-    title: "Interactive Developer Portfolio",
+    title: "GPT From Scratch",
     description:
-      "A modern portfolio featuring animated UI, interactive components, smooth transitions, and creative web experiences.",
-    tech: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-  },
-  {
-    title: "Cloud Deployment Pipeline",
-    description:
-      "A CI/CD workflow for containerized applications with automated testing, Docker builds, cloud deployment, and infrastructure automation.",
-    tech: ["Docker", "Kubernetes", "AWS", "GitHub Actions"],
-  },
-  {
-    title: "System Log Analyzer",
-    description:
-      "A lightweight log analysis tool that parses Linux system logs, detects critical events, and generates readable summaries.",
-    tech: ["Python", "Linux", "Shell"],
+      "A decoder-only Transformer language model built completely from scratch in PyTorch, following a 5-hour build covering tokenization, attention, and training a small GPT-style model end-to-end.",
+    tech: ["Python", "PyTorch", "Transformers", "NLP"],
   },
 ];
 
