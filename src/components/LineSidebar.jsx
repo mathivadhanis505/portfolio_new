@@ -27,10 +27,10 @@ export const PROJECTS = [
     demo: "https://www.youtube.com/watch?v=INc94dZiMOU&list=PLDCDI8MNYyQ8&pp=sAgCs",
   },
   {
-    title: "GPT From Scratch",
+    title: "GPT-Style Language Model (In Progress)",
     description:
-      "A decoder-only Transformer language model built completely from scratch in PyTorch, covering tokenization, attention, and training a small GPT-style model end-to-end (in process)",
-    tech: ["Python", "PyTorch", "Transformers", "NLP"],
+      "Implemented a decoder-only Transformer language model from scratch in PyTorch, building the complete pipeline from tokenization and embeddings to multi-head self-attention, transformer blocks, training, and autoregressive text generation. (in progress)",
+    tech: ["Python", "PyTorch", "Jupyter Notebook", "CUDA", "NLP", "Transformers", "Tokenization"],
   },
 ];
 
