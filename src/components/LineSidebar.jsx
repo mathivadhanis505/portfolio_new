@@ -29,7 +29,7 @@ export const PROJECTS = [
   {
     title: "GPT-Style Language Model (In Progress)",
     description:
-      "Implemented a decoder-only Transformer language model from scratch in PyTorch, building the complete pipeline from tokenization and embeddings to multi-head self-attention, transformer blocks, training, and autoregressive text generation. (in progress)",
+      "Implementing a decoder-only Transformer language model from scratch in PyTorch, building the complete pipeline from tokenization and embeddings to multi-head self-attention, transformer blocks, training, and autoregressive text generation to understand the internals of modern large language models. (in progress)",
     tech: ["Python", "PyTorch", "Jupyter Notebook", "CUDA", "NLP", "Transformers", "Tokenization"],
   },
 ];
