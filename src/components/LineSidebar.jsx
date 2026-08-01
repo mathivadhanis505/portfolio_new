@@ -29,7 +29,7 @@ export const PROJECTS = [
   {
     title: "GPT From Scratch",
     description:
-      "A decoder-only Transformer language model built completely from scratch in PyTorch, following a 5-hour build covering tokenization, attention, and training a small GPT-style model end-to-end.",
+      "A decoder-only Transformer language model built completely from scratch in PyTorch, covering tokenization, attention, and training a small GPT-style model end-to-end (in process)",
     tech: ["Python", "PyTorch", "Transformers", "NLP"],
   },
 ];
